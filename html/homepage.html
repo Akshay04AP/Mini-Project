@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WellSpring Hospital</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+   
+   <script type="text/javascript">
+        $(function(){
+            $('#header').load('header.html');
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function(){
+            $('#widget-specialities').load('widget-specialities.html');
+        });
+    </script>
+
+    <script type="text/javascript">
+         $(function(){
+            $('#widget-procedures').load('widget-procedures.html');
+        });
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="..\images\favicon\favicon.png">
+    <link rel="stylesheet" href="..\css\carousel.css">
+    <link rel="stylesheet" href="..\css\homepage.css">  
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');       
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+    
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="slideshow">
+        <img name="slide">
+        <button class="arrow-next" onclick="changeImg()"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+        <button class="arrow-prev" onclick="changeImg()"><span class="material-symbols-outlined">arrow_back_ios</span></button>
+    </div>
+    <script src="..\js\carousel.js" type="text/javascript"></script>
+    <br>
+    <center>
+        <div class="widget-service">
+            <div class="top-widget">
+                <br>
+                <img src="..\images\widget\appointment.png">
+                Book Appointment
+            </div>
+            <div class="top-widget">
+                <br>
+                <img src="..\images\widget\medical-book.png">
+                Book Health Check-Up
+            </div>
+            <div class="top-widget">
+                <br>
+                <img src="..\images\widget\consulting.png">
+                Consult Online
+            </div>       
+            <div class="top-widget">
+                <br>
+                <img src="..\images\widget\drugs.png">
+                Buy Medicine
+            </div> 
+            <div class="top-widget">
+                <br>
+                <img src="..\images\widget\hospital.png">
+                Find Hospital
+            </div> 
+            <div class="top-widget">
+                <br>
+                <img src="..\images\widget\medical-record.png">
+                View Health Record
+            </div> 
+        </div>
+    </center>
+    
+   
+    <center>
+        <div class="tab-group">
+            <button id="button-tab1" class="tab-button active-tab-button" onclick="selectTab('tab1')">Specialties</button>
+            <button id="button-tab2" class="tab-button" onclick="selectTab('tab2')">Procedures</button>
+            <button id="button-tab3" class="tab-button" onclick="selectTab('tab3')">ProHealth</button>         
+        </div>
+    </center>
+
+        <div class="tab active-tab" id="tab1"><div id="widget-specialities"></div></div>
+        <div class="tab" id="tab2"><div id="widget-procedures"></div></div> 
+        <div class="tab" id="tab3">
+          <h3>Tab 3 Content</h3>
+        </div>
+
+    <script src="..\js\SelectTabHomepage.js" type="text/javascript"></script>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>  
+
+</body>
+</html> 

@@ -1,0 +1,29 @@
+.slideshow{
+    overflow-x: hidden;
+    margin-top: 10px;
+}
+
+.slideshow img{
+    width:1540px;
+    height: 450px;
+}
+
+.arrow-next{
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    color: #3787b9;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow-prev{
+    position: absolute;
+    top: 50%;
+    right: 95%;
+    color: #3787b9;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
