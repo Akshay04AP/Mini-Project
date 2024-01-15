@@ -102,7 +102,6 @@ function createWidget_specialities(data_specialities){
     widText.innerHTML = data_specialities.text;
     widDiv.append(widText);
  
-
     document.getElementById("widgetContainer_specialities").appendChild(widDiv);
 }
 

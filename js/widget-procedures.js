@@ -72,7 +72,7 @@ const data_procedure = [
         text : "Prostatectomy"
     }
 ]
-
+ 
 function createWidget_procedure(data_procedure){
     let widDiv = document.createElement("div");
     widDiv.className = "widget-procedure"; 

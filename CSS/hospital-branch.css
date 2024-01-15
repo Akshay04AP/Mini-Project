@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+.branch-name{
+    width: 40%;
+    border: 1px solid black;
+    word-spacing: 7px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: medium;
+    color: #363737;
+    font-weight: lighter;
+}
+
+.above-title{
+    font-size: medium;
+}
+
+.hospital-widget{
+    width: 25%;
+    margin: 2%;
+    border-radius: 10px;
+    padding-top: 2%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    background-color: white;
+}
+
+.hospital-widget:hover{
+    border: 1px solid black;
+    border-color: orange;
+}
+
+.hospitalImg{
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hospitalName{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.hospital-group{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.hospital-branch{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+
+.branch-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 40%;
+    border: 1px solid black;
+}
+
+.branch-details img{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.city{
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 8%;
+}
+
+.address{
+    color: #363737;
+    margin-top: 3%;
+    font-size: large;
+    display: flex;
+    align-items: center;
+}
+
+.phone{
+    font-weight: bold;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.phone img, .address img{
+    width: 4%;
+    border: none;
+    margin-right: 2%;
+}
+
+.active-tab-button {
+    color: #0adbd4;
+    border-bottom: 5px solid #0adbd4;
+    border-radius: 3px;   
+}

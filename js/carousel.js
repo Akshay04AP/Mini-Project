@@ -1,5 +1,5 @@
 var i=0;
-var images = [];
+var images = []; 
 var time = 10000;
 
 images[0] = "..\\images\\banner\\banner (1).png";

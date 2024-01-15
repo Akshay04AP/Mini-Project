@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .counter-section{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(10, 219, 212, 0.2);
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.title-section{
+    border: 1px solid black;
+}
+
+.image-section{
+    border: 1px solid black;
+    width: 10%
+}
+
+.image-section img{
+  width: 100%;
+}
+  </style>
+</head>
+<body>
+  <div class="counter" id="counter">0</div>
+  <div class="image-section"><img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/ips_ah.webp"></div>
+
+  <script>
+    const endCount = 500000000000000000500;
+    const counterElement = document.getElementById('counter');
+
+    let currentCount = 0;
+
+    function updateCounter() {
+      counterElement.textContent = currentCount;
+      if (currentCount < endCount) {
+        currentCount += 1;
+        requestAnimationFrame(updateCounter);
+      } else {
+        counterElement.textContent = endCount;
+      }
+    }
+
+    window.addEventListener('load', updateCounter);
+  </script>
+</body>
+</html>
+
