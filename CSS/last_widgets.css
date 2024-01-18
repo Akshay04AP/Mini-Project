@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    user-select: none;
+    /* overflow-x: hidden; */
+}
+
+.last-widget img{
+    width: 25%;
+    padding-bottom: 10px;
+}
+
+.last-widget{
+    font-weight: bold;
+    font-size: smaller;
+    display: flex;
+    width: 16%;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-bottom: 1%;
+    background-color: white;
+}
+ 
+.last-widget:hover{
+    background: linear-gradient(to left, #3787b9 0%, #0adbd4 100%);
+    color: white;
+}
+
+.widget-services{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 4%;
+}
+
+.title_last{
+    background-color: #3787b9;
+    border: 1px solid #3787b9;
+}
+
+.title_last h1{
+    color: white;
+    margin: 2%;
+    font-size: xx-large;
+}

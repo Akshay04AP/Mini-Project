@@ -9,21 +9,41 @@
 </head>
 <body>
     <div class="heading">Disclaimer</div>
-    <br>
+    <br><br>
     <div class="cards">
         <div class="transplant">
             <div class="transplant_title">Transplant Disclaimer</div>
             <img src="..\images\card\transplant.jpg">
             <div class="transplant_intro">It has been brought to our notice that some people have received emails purporting to offer money for kidney donation and misusing the name of WellSpring Hospitals. The public in general and kidney patients...</div>
-            <div class="transplant_detail"></div>
-            <button type="button" class="read_more" id="transplant_read">Read More &nbsp; ➜</button>
+            <div class="transplant_popup" id="transplant_popup">
+                <div class="transplant_content" id="transplant_content">
+                    <button type="button" class="cross" id="transplant_cross" onclick="close_detail('transplant_popup')"> ╳ </button>
+                    <h2>WellSpring Hospitals Transplant Disclaimer And Notification</h2>
+                    <hr>
+                    <h4>
+                        It has been brought to our notice that some people have received emails purporting to offer money for kidney donation and misusing the name of WellSpring Hospitals.<br><br>The public in general and kidney patients in particular are hereby cautioned that these are fake phishing emails and that these mails are neither sent by WellSpring Hospitals nor is WellSpring Hospitals involved in any such scheme. These fraudulent and suspicious emails are only a scheme to extract payments from gullible individuals by misleading them using the names of reputed hospitals.<br><br> The WellSpring Hospitals transplant program is carried out in accordance with the Transplantation of Human Organs Act 1994 with amendments thereafter, and the Transplantation of Human Organs and Tissues Rules 2014. Any buying and selling of human organs are illegal and punishable under the law.<br><br> The general public is hereby warned to report such emails to the concerned authorities and not to deal/engage in any manner with any person/agency offering any benefits in cash or kind for kidney donation. WellSpring Hospitals does not solicit donation of human organs from the general public through social media or through phone calls. WellSpring Hospitals is taking appropriate legal action in this matter.
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </h4>
+                </div>
+            </div>
+            <button type="button" class="read_more" id="transplant_read" onclick="show_detail('transplant_popup')">Read More &nbsp; ➜</button>
         </div>
         <div class="recruitment">
             <div class="recruitment_title">Recruitment Disclaimer</div>
             <img src="..\images\card\recruitment.jpg">
             <div class="recruitment_intro">WellSpring Hospitals Enterprise Limited brings to your attention that persons not authorized by the Company are circulating/posting fake advertisements inviting applications from candidates for employment in the...</div>
-            <div class="recruitment_detail"></div>
-            <button type="button" class="read_more" id="recruitment_read">Read More &nbsp; ➜</button>
+            <div class="recruitment_popup" id="recruitment_popup">
+                <div class="recruitment_content" id="recruitment_content">
+                    <button type="button" class="cross" id="recruitment_cross" onclick="close_detail('recruitment_popup')"> ╳ </button>
+                    <h2>WellSpring Hospitals Recruitment Disclaimer And Notification</h2>
+                    <hr> 
+                    <h4>
+                        WellSpring Hospitals Enterprise Limited (“Company”) brings to your attention that certain persons are circulating/posting fake advertisements inviting applications from candidates for employment in the Company through e-mails, WhatsApp messages and on leading job portals. Such advertisements demanding payments through various online platforms and portals in exchange for appointments for interviews and offer letters are fraudulent and the Company categorically states that it does not entertain such practices in its recruitment process. These persons do not represent the Company in any manner whatsoever.<br><br> We urge the public not to be misled by such communication purportedly made by representatives of our Company demanding payment in lieu of employment in the Company. The Company is not liable for any loss that may ensue from such unauthorized acts committed by third parties misrepresenting themselves to be agents/representatives of the Company.
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </h4>
+                </div>
+            </div>
+            <button type="button" class="read_more" id="recruitment_read" onclick="show_detail('recruitment_popup')">Read More &nbsp; ➜</button>
         </div>
     </div>
 
