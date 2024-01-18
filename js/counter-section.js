@@ -43,10 +43,10 @@ const data_counter = [
     }
 ]
 
-function createWidget_counter(data_counter){
+function createWidget_counter(data_counter, i){
     let widDiv = document.createElement("div");
     widDiv.className = "counter-div";
-    
+
     let countImg = document.createElement("img");
     countImg.className = "widget-img_counter";
     countImg.src = data_counter.imgSrc;
@@ -54,9 +54,8 @@ function createWidget_counter(data_counter){
 
     let counter = document.createElement("div");
     counter.className = "widget-counter";
-    counter.id = "widget-counter";
+    counter.id = "widget-counter" + i;
     counter.textContent = data_counter.endCount;
-    // updateCounter(data_counter);
 
     let countContent = document.createElement("div");
     countContent.className = "widget-content";
@@ -67,39 +66,18 @@ function createWidget_counter(data_counter){
 
     combine.append(counter);
     combine.append(countContent);
-    
+
     widDiv.appendChild(countImg);
     widDiv.append(combine);
-    
+
     document.getElementById("counter-content").append(widDiv);
 }
 
 
-    
-    // counterElement.className = "widget-counter";
-    // counterElement.innerHTML = data_counter.counter;
-    
-
-// function updateCounter(data_counter){
-//     const counterElement = document.getElementById("widget-counter");
-//     const end = data_counter.counter;
-//     const currentCount = 1;
-    
-//     counterElement.textContent = currentCount;
-//     if(currentCount < end){
-//         currentCount += data_counter.number_gap;
-//         requestAnimationFrame(updateCounter);
-//     }else{
-//         counterElement.textContent = data_counter.endCount + "+";
-//     }
-// }
-
 const onLoadPageProcedure = () =>{
     for(let i = 0; i < data_counter.length; i++){
-        createWidget_counter(data_counter[i]);
-        // updateCounter(data_counter[i]);
-    }    
+        createWidget_counter(data_counter[i], i);
+    }
 }
 
 onLoadPageProcedure();
-// window.addEventListener('load', updateCounter);

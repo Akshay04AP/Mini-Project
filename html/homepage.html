@@ -32,6 +32,12 @@
     });
     </script>
 
+    <script type="text/javascript">
+        $(function(){
+        $('#hospital-branch').load('hospital-branch.html');
+    });
+    </script>
+
     <link rel="icon" type="image/x-icon" href="..\images\favicon\favicon.png">
     <link rel="stylesheet" href="..\css\carousel.css">
     <link rel="stylesheet" href="..\css\homepage.css">
@@ -97,7 +103,7 @@
             <button id="button-tab2" class="tab-button" onclick="selectTab('tab2')">Procedures</button>
             <button id="button-tab3" class="tab-button" onclick="selectTab('tab3')">ProHealth</button>         
         </div>
-    </center>
+    </center>  
 
         <div class="tab active-tab" id="tab1"><div id="widget-specialities"></div></div>
         <div class="tab" id="tab2"><div id="widget-procedures"></div></div> 
@@ -108,7 +114,7 @@
     <br><br><br><br>
     <div id="counter-section"></div>
     <br><br> 
-    
+    <div id="hospital-branch"></div>
 
 </body>
 </html> 

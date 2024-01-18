@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    user-select: none;
+    /* overflow-x: hidden; */
+}
+
+.heading{
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;    
+}
+
+.cards{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-evenly;
+}
+
+.transplant_title, .recruitment_title{
+    border: 1px solid black;
+    margin: 3%;
+    font-size: large;
+}
+
+.transplant, .recruitment{
+    border: 1px solid black;
+    width: 25%;
+}
+
+.transplant img, .recruitment img{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.recruitment_intro, .transplant_intro{
+    line-height: 1.5;
+    border: 1px solid black;
+    margin: 3%;
+    font-size: medium;
+    color: #363737;
+}
+
+.read_more{
+    margin: 3%;
+    color: orange;
+    border: 1px solid black;
+    background-color: white;
+}
